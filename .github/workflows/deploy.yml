@@ -17,7 +17,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.DOCKERHUB_PSILVA6 }}
-        password: ${{ secrets.DOCKERHUB-dckr_pat_bleA_Jd1yP_Oqjzun4NDin70o1s }}
+        password: ${{ secrets.DOCKHERHUB_DCKR_PAT_BLEA_JD1YP_OQJZUN4NDIN70O1S }}
 
     - name: Build and Push App Image
       description: Construye la imagen de la app web y la sube a Docker Hub
