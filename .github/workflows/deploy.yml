@@ -16,7 +16,7 @@ jobs:
       description: Se autentica en Docker Hub usando los secretos guardados
       uses: docker/login-action@v3
       with:
-        username: ${{ secrets.DOCKERHUB-psiva6-hue }}
+        username: ${{ secrets.DOCKERHUB_PSILVA6 }}
         password: ${{ secrets.DOCKERHUB-dckr_pat_bleA_Jd1yP_Oqjzun4NDin70o1s }}
 
     - name: Build and Push App Image
@@ -25,7 +25,7 @@ jobs:
       with:
         context: ./myapp
         push: true
-        tags: ${{ secrets.DOCKERHUB-psiva6-hue }}/myapp:latest
+        tags: ${{ secrets.DOCKERHUB_PSILVA6 }}/myapp:latest
 
     - name: Build and Push Nginx Image
       description: Construye la imagen del Proxy Nginx y la sube a Docker Hub
@@ -33,4 +33,4 @@ jobs:
       with:
         context: ./mynginx
         push: true
-        tags: ${{ secrets.DOCKERHUB-psiva6-hue }}/mynginx:latest
+        tags: ${{ secrets.DOCKERHUB_PSILVA6 }}/mynginx:latest
