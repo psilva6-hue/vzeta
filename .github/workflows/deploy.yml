@@ -1,4 +1,4 @@
-name: CI/CD Pipeline VZeta
+name: CI/CD Pipeline VZeta V2
 
 on:
   push:
