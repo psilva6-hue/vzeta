@@ -1,5 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head><title>App VZeta</title></head>
-<body><h1>Despliegue Exitoso en VZeta de forma Continua!</h1></body>
-</html>
